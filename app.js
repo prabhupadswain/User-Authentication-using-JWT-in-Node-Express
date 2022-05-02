@@ -12,7 +12,7 @@ connectDB();
 
 // Import routes
 const authRoute = require('./routes/api/auth');
-const postRoute = require('./routes/api/post');
+const profileRoute = require('./routes/api/profile');
 
 // Parsing request bodies
 app.use(express.urlencoded({ extended: false }));
@@ -20,7 +20,7 @@ app.use(express.json());
 
 // Define routes
 app.use('/api/user', authRoute);
-app.use('/api/post', postRoute);
+app.use('/api/profile', profileRoute);
 
 // Error Handling Middleware
 app.use((req, res, next) => {
