@@ -3,8 +3,12 @@
 It is node & express application which uses the cloud database provided by MongoDB names MongoDB Atlas. 
 It shows registration and login of an user with JWT along with required validations.
 
-MVC pattern is implemented with an exception that views are not used for this purpose. Only Model & Controllers are present with required middlewares and validations.
+MVC pattern is implemented with an exception that views are not used for this purpose.
+Only Model & Controllers are present with required middlewares and validations.
+
 Its a server side application in which APIs are tested on Postman tool which are working fully.
+
+A protected profile route is also added to check if the authenticated user can access that route.
 
 ## How to run this application.
 1. Once this project is cloned, please navigate to the project directory folder run the command : "npm install" inside of your terminal. This will install the dependecies/node_modules this project uses
