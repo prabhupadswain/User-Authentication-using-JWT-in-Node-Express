@@ -4,7 +4,7 @@ const router = express.Router();
 const auth = require('../../middleware/auth');
 const User = require('../../models/User');
 
-// @route    POST api/profile/
+// @route    POST api/profile
 // @desc     Get user by token
 // @access   Private
 router.get('/', auth, async (req, res, next) => {
