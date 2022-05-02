@@ -7,8 +7,8 @@ MVC pattern is implemented with an exception that views are not used for this pu
 Its a server side application in which APIs are tested on Postman tool which are working fully.
 
 ## How to run this application.
-1. Once this project is cloned, please navigate to the project directory folder run the command : ## "npm install" inside of your terminal. This will install the dependecies/node_modules this project uses
-2. Run following command: ## "npm run dev". It will start your application in the port 3500.
+1. Once this project is cloned, please navigate to the project directory folder run the command : "npm install" inside of your terminal. This will install the dependecies/node_modules this project uses
+2. Run following command: "npm run dev". It will start your application in the port 3500.
 3. If you want can set the PORT variable in .env file as follows:. This step can be skipped as well if not going for production and if its for learning purpose. 
    
 ## ENVIRONMENT VARIABLES (.env file)
