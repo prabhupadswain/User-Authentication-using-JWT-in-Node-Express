@@ -19,11 +19,10 @@ And then, running ##"npm run dev" will start the application in localhost:5000.
 
 ## default.json file
 Included following things in this file inside config folder of this project directory.
+
 {
   "mongoURI": "YOUR_MONGO_URI_CREDENTIALS",
   "SECRET_TOKEN": "YOUR-SECRET_TOKEN"
 }
 
 ### Add default.json file before running the application and adding the MongoDB database credentials.
-
-
