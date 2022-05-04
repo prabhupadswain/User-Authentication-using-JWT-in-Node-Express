@@ -82,8 +82,8 @@ const loginUser = async (req, res, next) => {
       { expiresIn: 3600 },
       (err, token) => {
         if (err) throw err;
-        res.header('x-auth-token', token);
-        res.json({ token });
+        res.header('Authorization', token);
+        res.json({ token: 'Bearer ' + token });
       }
     );
   } catch (err) {

@@ -2,7 +2,10 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const connectDB = require('./config/db');
+
 require('dotenv').config();
+
+const passport = require('passport');
 
 //Cors
 app.use(cors());
@@ -10,6 +13,8 @@ app.use(cors());
 //Connect DB
 connectDB();
 
+// Use Passport JS middleware
+app.use(passport.initialize());
 // Import routes
 const authRoute = require('./routes/api/auth');
 const profileRoute = require('./routes/api/profile');
