@@ -33,9 +33,9 @@ This branch version-two differs from main branch where some code refactorments a
 
 ## ENVIRONMENT VARIABLES (.env file)
 
-NODE_ENV = development/testing/production
-PORT = xxxx
-MONGO_URI = Mongo_URI connection string/credentials
+NODE_ENV = development/testing/production,
+PORT = xxxx,
+MONGO_URI = Mongo_URI connection string/credentials,
 SECRET_TOKEN = Any_String_Of_Chaaracters
 
 ### Add .env file before running the application and adding the MongoDB database credentials along with a SECRET_TOKEN. PORT can be optional as skipping PORT environement variable will make this application run at PORT=3500
