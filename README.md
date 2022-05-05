@@ -1,32 +1,24 @@
 # User Registration & Login in JWT
 
-It is node & express application which uses the cloud database provided by MongoDB names MongoDB Atlas. 
-It shows registration and login of an user with JWT along with required validations.
+1. It is node & express application which uses the cloud database provided by MongoDB named MongoDB Atlas. Local instance of MongoDB can be used also.
+2. It shows registration and login of an user with JWT authentication along with required validations.
+3. Passport-JWT and custom JWT both verification is implemented.
+4. Two protected routes are implemented which can be accessed if the user is authenticated. One route is custom JWT authenticated and another route is passport-JWT authenticated.
+5. JWT is generated at register route so that, if the user successfully registers, can immediately be logged in. And, JWT generation at login route is self-explanatory.
 
-MVC pattern is implemented with an exception that views are not used for this purpose.
-Only Model & Controllers are present with required middlewares and validations.
+## Navigate to this repository.
 
-Its a server side application in which APIs are tested on Postman tool which are working fully.
+1. This repository consists of two branches namely version-one and version-two.
+2. On selection of the particular branch, you can view the code and can clone repository.
 
-A protected profile route is also added to check if the authenticated user can access that route.
+### version-two branch is the enhanced and updated version of the version-one.
 
-## How to run this application.
-1. Once this project is cloned, please navigate to the project directory folder run the command : "npm install" inside of your terminal. This will install the dependecies/node_modules this project uses
-2. Run following command: "npm run dev". It will start your application in the port 3500.
-3. If you want can set the PORT variable in .env file as follows:. This step can be skipped as well if not going for production and if its for learning purpose. 
-   
-## ENVIRONMENT VARIABLES (.env file)
-NODE_ENV=development/testing/production
-PORT=xxxx
+You can refer version-one branch also. But, version-two consists the functionality of version-one along with better and well organized application structure.
 
-And then, running ##"npm run dev" will start the application in localhost:5000.
+### Each branch has its own README file which you can refer.
 
-## default.json file
-Included following things in this file inside config folder of this project directory.
+## Basic NPM commands
 
-{
-  "mongoURI": "YOUR_MONGO_URI_CREDENTIALS",
-  "SECRET_TOKEN": "YOUR-SECRET_TOKEN"
-}
-
-### Add default.json file before running the application and adding the MongoDB database credentials.
+1. npm install - To install dependencies/node_modules this application requires.
+2. npm run dev - To start the application
+3. npm start - Will run the application without nodemon. For production
