@@ -18,18 +18,18 @@
 
 ## ENVIRONMENT VARIABLES (.env file)
 
-NODE_ENV=development/testing/production
+NODE_ENV=development/testing/production,
 PORT=xxxx
 
 And then, running "npm run dev" will start the application in localhost:xxxx.
 
 This branch version-two differs from main branch where some code refactorments are done.
 
--> Controllers are implemented for protected routes.
--> Passport JWT authentication is made along with Custom JWT authentication is implemented.
--> Two protected routes are implemented. One for Passport JWT and one for Custom JWT.
--> Also, you dont need to use the global config anywhere or default.json file for including secret credentials or DB credentials.
--> In .env file every credentials can be mentioned unlike the main branch.
+1. Controllers are implemented for protected routes.
+2. Passport JWT authentication is made along with Custom JWT authentication is implemented.
+3. Two protected routes are implemented. One for Passport JWT and one for Custom JWT.
+4. Also, you dont need to use the global config anywhere or default.json file for including secret credentials or DB credentials.
+5. In .env file every credentials can be mentioned unlike the main branch.
 
 ## ENVIRONMENT VARIABLES (.env file)
 
@@ -42,9 +42,9 @@ SECRET_TOKEN = Any_String_Of_Chaaracters
 
 ## API END-POINTS
 
-localhost:3500/api/user/login - Login a User
-localhost:3500/api/user/register - Register a User
-localhost:3500/api/profile/auth_protected - Protected route. Authenticated user will able to access it
-localhost:3500/api/profile/passport_protected - Protected route. Authenticated user will able to access it
+1. localhost:3500/api/user/login - Login a User
+2. localhost:3500/api/user/register - Register a User
+3. localhost:3500/api/profile/auth_protected - Protected route. Authenticated user will able to access it
+4. localhost:3500/api/profile/passport_protected - Protected route. Authenticated user will able to access it
 
-## In above, PORT=3500. If you set PORT variable in .env file as let say 5000 then, the application will run at localhost:5000.
+### In above, PORT=3500. If you set PORT variable in .env file as let say 5000 then, the application will run at localhost:5000.
