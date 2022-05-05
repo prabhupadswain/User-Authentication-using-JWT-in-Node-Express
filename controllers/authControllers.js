@@ -1,6 +1,5 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const config = require('config');
 
 const User = require('../models/User');
 
@@ -41,7 +40,7 @@ const registerUser = async (req, res, next) => {
 
     jwt.sign(
       payload,
-      config.get('SECRET_TOKEN'),
+      process.env.SECRET_TOKEN,
       { expiresIn: 3600 },
       (err, token) => {
         if (err) throw err;
@@ -78,7 +77,7 @@ const loginUser = async (req, res, next) => {
     };
     jwt.sign(
       payload,
-      config.get('SECRET_TOKEN'),
+      process.env.SECRET_TOKEN,
       { expiresIn: 3600 },
       (err, token) => {
         if (err) throw err;
