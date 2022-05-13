@@ -18,6 +18,7 @@ app.use(passport.initialize());
 // Import routes
 const authRoute = require('./routes/api/auth');
 const profileRoute = require('./routes/api/profile');
+const weatherRoute = require('./routes/api/weather');
 
 // Parsing request bodies
 app.use(express.urlencoded({ extended: false }));
@@ -26,6 +27,7 @@ app.use(express.json());
 // Define routes
 app.use('/api/user', authRoute);
 app.use('/api/profile', profileRoute);
+app.use('/api/weather', weatherRoute);
 
 // Error Handling Middleware
 app.use((req, res, next) => {
